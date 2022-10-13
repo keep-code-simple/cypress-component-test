@@ -1,0 +1,27 @@
+{
+  "result": [
+    {
+      "urgent": true,
+      "relocation": true,
+      "remote": true,
+      "office": false,
+      "continuum": false,
+      "localizedGroup": "Software, System, and Test Engineering",
+      "isGdo": true,
+      "hideCityOnPage": false,
+      "id": 85368,
+      "name": "Lead Software Test - remote",
+      "language": "en",
+      "internationalCountry": "USA",
+      "internationalCity": "Other",
+      "localizedCity": "Other",
+      "localizedCountry": "USA",
+      "displayedLocation": "REMOTE",
+      "description": "The QA Automation Performance Engineer will work alongside developers, architects, and other QA Engineers to develop and execute effective strategies and test plans for various projects that improve the experience, efficiency, and performance of Front Office applications. The successful candidate will be comfortable working directly with developers, quants, database admins, DevOps, and business project managers to test and advise on the quality of our applications.<br/><br/>Additionally, the new hire is expected to work collaboratively with others in IT where required to help troubleshoot production issues, pre/post release application checkouts, and attend meetings and sessions during the full life cycle of system development projects: generating test ideas through brainstorming during requirements gathering, application/system design, data modeling sessions, coding, delivery, support of our automation frameworks, and enhancements through an agile/scrum process.<br/><br/>Req.#378717574",
+      "shortDescription": "The QA Automation Performance Engineer will work alongside developers, architects, and other QA Engineers to develop and execute effective strategies and test plans for various projects that improve the experience, efficiency,...",
+      "url": "https://www.epam.com/careers/job-listings/job.85368.remote_lead-software-test-engineer-remote",
+      "externalReferralFormLink": "https://www.epam.com/careers/external-referral-program/us-and-canada?vacancy_link=https://www.epam.com/careers/job-listings/job.85368.remote_lead-software-test-engineer-remote#form"
+    }
+  ],
+  "total": 1
+}

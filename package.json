@@ -1,0 +1,15 @@
+{
+  "name": "cypress-component-test",
+  "version": "1.0.0",
+  "scripts": {
+    "cypressTest": "cypress run --spec **/position.feature"
+  },
+  "devDependencies": {
+    "cypress": "^10.9.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/support/step_definitions"
+  }
+}
