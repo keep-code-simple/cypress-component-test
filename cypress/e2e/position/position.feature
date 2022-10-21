@@ -1,16 +1,28 @@
-Feature: Verify the position details
+Feature: Provide available position details
 
-  Background:
-    Given I visit epam careers
+  @positiveTest
+  Scenario: As a job seeker, I want to see available position details
+    Given There is one "Software Engineer" position available
+    When I visit epam careers
+    And I search for "Software Engineer" position
+    Then I should see position details as below
+      |name             |positionType|
+      |Software Engineer|REMOTE      |
 
 
-  Scenario: As a job seeker, I want to search for engineer job positions
-    When search for "Lead Software Test Engineer - Remote" position
-    Then I should see position details
-      |name                                |urgent                     |
-      |Lead Software Test Engineer - Remote|HOT                        |
+  @negativeTest
+  Scenario: As a job seeker, I want to see message when position I am looking is not available
+    Given There are no positions available
+    When I visit epam careers
+    And I search for "Software Engineer" position
+    Then I should see an error message "Sorry, your search returned no results. Please try another combination."
 
 
-  Scenario: As a job seeker, I want to search for construction job positions
-    When search for "Roof builder" position
-    Then I should see "Sorry, your search returned no results. Please try another combination."
+  @edgeCaseTest
+  Scenario: As a job seeker, I want to see graceful error message when service is not available
+    Given Vacancy service is not available
+    When I visit epam careers
+    And I search for "Software Engineer" position
+    Then I should see an error message "Sorry, something went wrong. Please, try again later."
+
+
